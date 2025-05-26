@@ -5,10 +5,12 @@ using UnityEngine;
 public class Destroy : MonoBehaviour
 {
     public ScoreManager scoreManager;
+    public Mercaderia mercaderia;
 
     private void Start()
     {
         scoreManager = FindObjectOfType<ScoreManager>();
+        mercaderia = GetComponent<Mercaderia>();
     }
 
     private void OnCollisionEnter(Collision collision)

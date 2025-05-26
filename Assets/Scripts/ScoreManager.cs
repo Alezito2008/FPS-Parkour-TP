@@ -1,23 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
     public int score = 0;
-    public TextMeshProUGUI scoreText;
+    public UIManager uiManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        uiManager = FindObjectOfType<UIManager>();
     }
 
     public void addScore()
     {
         score++;
-        Debug.Log(score);
-        scoreText.text = $"Score: {score}";
+        uiManager.updateScore(score);
+    }
+
+    public void addScore(int scorePoints)
+    {
+        score += scorePoints;
+        uiManager.updateScore(score);
     }
 }
