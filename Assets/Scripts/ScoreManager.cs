@@ -15,7 +15,7 @@ public class ScoreManager : MonoBehaviour
 
     public void addScore()
     {
-        score++;
+        score+=10;
         uiManager.updateScore(score);
     }
 
