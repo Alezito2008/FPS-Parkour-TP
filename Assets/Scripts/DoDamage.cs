@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,6 +17,7 @@ public class DoDamage : MonoBehaviour
         if (collision.gameObject.name == "SimpleFPSController")
         {
             healthManager.damage();
+            Destroy(gameObject);
         }
     }
 }

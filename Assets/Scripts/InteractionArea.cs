@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class InteractionArea : MonoBehaviour
 {
+    public ScoreManager scoreManager;
+
     public GameObject UIInteractionMessage;
-    public GameObject currentInteractable = null;
+    GameObject currentInteractable = null;
+
+    private void Start()
+    {
+        scoreManager = FindObjectOfType<ScoreManager>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,12 +26,14 @@ public class InteractionArea : MonoBehaviour
         if (!other.CompareTag("Interactable")) return;
         UIInteractionMessage.SetActive(false);
         if (currentInteractable == other.gameObject) currentInteractable = null;
+
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
         {
+            scoreManager.addScore(10);
             Destroy(currentInteractable);
             currentInteractable = null;
             UIInteractionMessage.SetActive(false);
