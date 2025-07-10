@@ -33,8 +33,12 @@ public class InteractionArea : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
         {
-            scoreManager.addScore(10);
-            Destroy(currentInteractable);
+            Mercaderia mercaderia = currentInteractable.GetComponent<Mercaderia>();
+            if (mercaderia != null)
+            {
+                scoreManager.addScore(mercaderia.scorePoints);
+            }
+            Destroy(currentInteractable.gameObject);
             currentInteractable = null;
             UIInteractionMessage.SetActive(false);
         }

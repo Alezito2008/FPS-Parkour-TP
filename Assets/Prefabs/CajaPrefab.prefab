@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4834745941072344035}
   m_Layer: 0
   m_Name: CajaPrefab
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21648e2ac83e70e41ab386a241f6725b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePoints: 0
+  scorePoints: 10
 --- !u!1001 &6319702546871804558
 PrefabInstance:
   m_ObjectHideFlags: 0
