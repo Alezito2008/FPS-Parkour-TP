@@ -12,9 +12,9 @@ public class DoDamage : MonoBehaviour
         healthManager = FindObjectOfType<HealthManager>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.name == "SimpleFPSController")
+        if (other.gameObject.name == "SimpleFPSController")
         {
             healthManager.damage();
             Destroy(gameObject);

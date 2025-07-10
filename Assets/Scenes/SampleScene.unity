@@ -483,11 +483,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pinche
       objectReference: {fileID: 0}
-    - target: {fileID: 8425345001455348635, guid: e7d317dfac554ff4d81f82d210e79711,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d317dfac554ff4d81f82d210e79711, type: 3}
 --- !u!1001 &147086521

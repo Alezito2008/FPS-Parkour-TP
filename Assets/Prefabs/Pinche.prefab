@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8425345001455348635}
   - component: {fileID: 6406492067056080595}
   - component: {fileID: 931715047148241406}
+  - component: {fileID: 2039513391}
   m_Layer: 0
   m_Name: Pinche
   m_TagString: Untagged
@@ -119,7 +120,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8196985734949648292}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.8015847, y: 6.8893, z: 6.310032}
@@ -137,3 +138,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthManager: {fileID: 0}
+--- !u!65 &2039513391
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8196985734949648292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.012672, y: 3.7960603, z: 5.69991}
+  m_Center: {x: -0.16794237, y: 0.11818346, z: 0}
